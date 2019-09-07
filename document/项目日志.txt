@@ -1,0 +1,7 @@
+git常用命令
+1. git clone 仓库地址（如:https://github.com/simonalwayson/MyTest.git)  //第一次从服务器下载代码
+2. git add .                                                           //（将新增的文件或文件夹）纳入版本控制
+3. git commit -m "简单描述信息"                                         //提交到本地仓库（附带描述提示信息）
+4. git push origin master   （简版写法）                                //从服务器下载代码（第二次及以后）
+   git push 仓库地址/ master  （完整版写法）
+5. git status                                                          //查看仓库状态                                          
