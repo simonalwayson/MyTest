@@ -4,4 +4,19 @@ git常用命令
 3. git commit -m "简单描述信息"                                         //提交到本地仓库（附带描述提示信息）
 4. git push origin master   （简版写法）                                //从服务器下载代码（第二次及以后）
    git push 仓库地址/ master  （完整版写法）
-5. git status                                                          //查看仓库状态                                          
+5. git status                                                          //查看仓库状态 
+
+分支
+1.先pull下来最新的主分支
+    git pull origin dev
+2.创建本地分支
+    git branch local_dev
+3.查看本地分支==>本地有两个分支，一个是dev，一个是local_dev
+    git branch                                         
+4.在local_dev分支进行代码开发，测试完代码后，需要提交到远程主分支上
+    先合并分支到主分支上去，在合并之前，确保local_dev中所有代码已add和commit
+    
+    git add
+
+    git commit -m"提交注释"
+5.使用git status查看是否还有没有提交的文件,确保都已commit
